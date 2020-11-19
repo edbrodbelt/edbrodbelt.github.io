@@ -5,6 +5,9 @@ body{
 .menubar{
     overflow: hidden;
     background-color:darkslategray;
+    position:fixed; /* Sets the menu bar to the fixed position*/
+    top:0; /* Positions the menu bar at the top of the page*/
+    width:100%; /* Makes the menu bar full width */
 }
 .menubar a{
     float:left;
