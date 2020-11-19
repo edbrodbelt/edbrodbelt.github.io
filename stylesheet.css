@@ -10,9 +10,7 @@ body{
     overflow: hidden;
     background-color:darkslategray;
     opacity: 0.9;
-    position:fixed; /* Sets the menu bar to the fixed position*/
-    top:0; /* Positions the menu bar at the top of the page*/
-    width:100%; /* Makes the menu bar full width */
+    
 }
 .menubar a{
     float:left;
@@ -33,6 +31,16 @@ body{
     color:white;
 }
 
-.content{
+.content{ /* Contains the page content */
     padding:15px;
+}
+
+.sticky{ /* this class is added to the menubar using JS when it reaches the scrolled position specified */
+    position:fixed; /* Sets the menu bar to the fixed position*/
+    top:0; /* Positions the menu bar at the top of the page*/
+    width:100%; /* Makes the menu bar full width */
+}
+
+.sticky + .content{ /* THis adds some padding to the top of the page to prevent sudden movement */
+    padding-top:60px;
 }
