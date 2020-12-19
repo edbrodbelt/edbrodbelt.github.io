@@ -1,8 +1,7 @@
 h1{
     font-family:Arial, Helvetica, sans-serif;
-    color: black;
-
-
+    color:#141f73;
+    font-size:100px;
 }
 
 body{
@@ -14,13 +13,20 @@ body{
     background-attachment: fixed; /* This makes sure that the background image covers the background and is undistorted*/
     background-size: cover; /* Ensures the image covers the entire background*/
 }
-.menubar{
+/*Header Bar Styling */
+.header{ 
+    background-color:#374df0; 
+    text-align:center;
+    padding:10px;
+}
+
+#menubar{
     overflow: hidden;
-    background-color:darkslategray;
+    background-color:#141f73;
     opacity: 0.9;
     
 }
-.menubar a{
+#menubar a{
     float:left;
     color:white;
     padding: 15px 15px;
@@ -29,13 +35,13 @@ body{
     font-size: 20px;
 }
 
-.menubar a:hover{
+#menubar a:hover{
     background-color: white;
     color: black;
 }
 
-.menubar a.current{
-    background-color:#4c7f7f;
+#menubar a.current{
+    background-color:#5460b8;
     color:white;
 }
 

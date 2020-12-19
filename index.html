@@ -2,20 +2,22 @@
 
 <html lang="en-UK">
     <head>
-        <!-- Favicon Implementation-->
+        <!-- Favicon Implementation -->
             <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
             <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
             <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
             <link rel="manifest" href="favicon/site.webmanifest">
-        <!-- Favicon Implementation-->
+         <!-- Favicon Implementation-->
 
         <title> Brodbelt.com </title> <!-- Title - Displayed in tabs bar-->
-        <link rel="stylesheet" href="stylesheet.css"> <!-- Linking the style sheet to the index page-->
+        <link rel="stylesheet" type ="text/css" href="stylesheet.css"> <!-- Linking the style sheet to the index page-->
     </head>
+    <body>
+    <div class="header">
+        <h1>Brodbelt.com</h1>
+    </div>
 
-
-    <div id="menubar">
-        
+    <div id="menubar"> 
         <a class="current" href="#Home">Home</a>
         <a href="#Page2" >Page 2</a> 
         <a href="#Page3">Page 3</a>
@@ -25,12 +27,11 @@
     </div>
 
     <div class="content"></div>
-        <h1>This page is currently under development so stay tuned :-) !</h1>
+        <h2>This page is currently under development so stay tuned :-) !</h2>
 
     
 
-        <p>Some text to 
-            enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
@@ -45,14 +46,15 @@
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
     
-        <!-- <img src="Background_1.png" alt="Mountain view"> -->
+    
     </div>
+    
 
     <script>
         window.onscroll = function() {mystickyfunction()}; // When the user scrolls execute the function "mystickyfunction"
 
         var menubar = document.getElementById("menubar"); //Get the size of the navbar ??!!
-        var sticky = navbar.offsetTop; //Get the offset position ofthe navbar
+        var sticky = menubar.offsetTop; //Get the offset position ofthe navbar
 
         function mystickyfunction(){ //Add the sticky class to navbar when you reach the scrolled positon and remove it when you leave the scrolled postion
             if (window.pageYOffset >= sticky){
@@ -65,6 +67,8 @@
         }
     </script>
 
+
+    </body>
     <footer>
         <hr>
         <p>&#169; Edward Brodbelt 2020</p>
