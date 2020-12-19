@@ -2,17 +2,19 @@
 
 <html lang="en-UK">
     <head>
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-        <link rel="manifest" href="favicon/site.webmanifest">
-        
-        <title> Brodbelt.com </title>
+        <!-- Favicon Implementation-->
+            <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+            <link rel="manifest" href="favicon/site.webmanifest">
+        <!-- Favicon Implementation-->
+
+        <title> Brodbelt.com </title> <!-- Title - Displayed in tabs bar-->
         <link rel="stylesheet" href="stylesheet.css"> <!-- Linking the style sheet to the index page-->
     </head>
 
 
-    <div class="menubar">
+    <div id="menubar">
         
         <a class="current" href="#Home">Home</a>
         <a href="#Page2" >Page 2</a> 
@@ -27,7 +29,7 @@
 
     
 
-        <!--<p>Some text to 
+        <p>Some text to 
             enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
@@ -43,13 +45,11 @@
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
     
-        -->
-    
         <!-- <img src="Background_1.png" alt="Mountain view"> -->
     </div>
 
     <script>
-        window.onscroll = function() {mystickyfunction()}; // When the user scross execute the function "mystickyfunction"
+        window.onscroll = function() {mystickyfunction()}; // When the user scrolls execute the function "mystickyfunction"
 
         var menubar = document.getElementById("menubar"); //Get the size of the navbar ??!!
         var sticky = navbar.offsetTop; //Get the offset position ofthe navbar
@@ -64,6 +64,7 @@
         
         }
     </script>
+
     <footer>
         <hr>
         <p>&#169; Edward Brodbelt 2020</p>
