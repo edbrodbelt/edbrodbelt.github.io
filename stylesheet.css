@@ -35,12 +35,12 @@ body{
     font-size: 20px;
 }
 
-.menubar a:hover, .dropdown:hover .dropdownbutton{
+.menubar a:hover, .dropdown:hover, .dropdownbutton{
     background-color: #5460b8;
     color: black;
 }
 
-.menubar a.current{
+.menubar a.current, .current{
     background-color:#5460b8;
     color:white;
 }
