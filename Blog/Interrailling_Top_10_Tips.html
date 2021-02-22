@@ -148,7 +148,22 @@
 
 
     </div>
+    <script>
+        window.onscroll = function() {mystickyfunction()}; // When the user scrolls execute the function "mystickyfunction"
 
+        var menubar = document.getElementsByClassName("menubar")[0]; //Get the size of the navbar ??!!
+        var sticky = menubar.offsetTop; //Get the offset position ofthe navbar
+
+        function mystickyfunction(){ //Add the sticky class to navbar when you reach the scrolled positon and remove it when you leave the scrolled postion
+            if (window.pageYOffset >= sticky){
+                menubar.classList.add("sticky")
+            }
+            else {
+                menubar.classList.remove("sticky")
+            }
+        
+        }
+    </script>
 </body>
 <footer>
     <hr>
