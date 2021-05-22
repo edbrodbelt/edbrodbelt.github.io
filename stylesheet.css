@@ -110,3 +110,43 @@ body{
     color: rgba(255, 0, 0, 0.75);
     padding:50px;
 }
+
+
+.TwoColumnDisp{
+    float:left;
+    text-align: center;
+    background-color: rgba(255,255,255,0.6);
+    padding:10px;
+    margin-bottom:10px;
+}
+
+.Left {
+    width:40%;
+    height:200px;
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+.Leftnofixedheight {
+    width:40%;
+    margin-bottom: 10px;
+    text-align:center;
+}
+
+.Right {
+    width:40%;
+    height:200px;
+    text-align:center;
+    
+}
+
+.Rightnofixedheight {
+    width:40%;
+    margin-bottom: 10px;
+    text-align:center;
+    
+}
+
+.clear{
+    clear:both;
+}
