@@ -58,7 +58,7 @@ php include 'header.php';
     </body>
     <footer>
         <hr>
-        <p style="text-align:center;">&#169; Edward Brodbelt 2021</p>
+        <p style="text-align:center;">&#169; Edward Brodbelt 2022</p>
         <hr>
     </footer>
 
