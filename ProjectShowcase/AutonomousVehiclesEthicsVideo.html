@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en-UK">
+    <head>
+        <!-- Favicon Implementation -->
+            <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+            <link rel="manifest" href="../favicon/site.webmanifest">
+         <!-- Favicon Implementation-->
+
+        <title> Brodbelt.com </title> <!-- Title - Displayed in tabs bar-->
+        <link rel="stylesheet" type ="text/css" href="../stylesheet.css"> <!-- Linking the style sheet to the index page-->
+    </head>
+    <body>
+    <div class="header">
+        <h1>Brodbelt.com</h1>
+    </div>
+
+    <div class="menubar"> 
+        <a href="../index.html">Home</a>
+
+        <div class="dropdown">
+            <div class="current">
+                <button class="dropdownbutton"> <a class="overrideborder current" href="../Projectshowcasehome.html"> Project Showcase </a>
+                </button> 
+            </div>
+            <div class="dropdowncontent">
+                <a href="./ProjectShowcase/CPPPowerElectronicsCalculator.html">Power Electronics Calculator</a>
+                <a href="./ProjectShowcase/EmbeddedSystemsGPS.html">GPS Embedded Systems</a>
+                <a href="./ProjectShowcase/3DPrinting/3DPrintingHome.html">3D Printing</a>
+                <!-- <a href="#">Item 4</a> -->
+                <!-- <a href="#">Item 5</a> -->
+            </div>
+        </div> 
+        <a href="../about.html">About</a>
+        
+
+        <div class="dropdown">
+            <button class="dropdownbutton"> <a class="overrideborder" href="../Blog/bloghome.html">Blog</a>
+            </button> 
+            
+            <div class="dropdowncontent">
+                <a href="./Blog/Interrailling_Top_10_Tips.html">Interrailling Top 10</a>
+                <!-- <a href="#">Item 2</a> -->
+                <!-- <a href="#">Item 3</a> -->
+                <!-- <a href="#">Item 4</a> -->
+                <!-- <a href="#">Item 5</a> -->
+            </div>
+
+        </div> 
+        <!--
+        <a href="#Page5">Page 5</a>
+        <a href="#Page6">Page 6</a> -->
+    </div>
+
+    <div class="content">
+        <h2>Autonomous Vehicle Ethics Video</h2>
+
+        <table>
+            <tr>
+                <td>
+                <p><b>Name:</b></p>
+                </td>
+                <td>
+                    <p><b>Language/Tools Used</b></p>
+                </td>
+                <td>
+                    <p><b>Timeframe</b></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>AV Ethics Video</p>
+                </td>
+                <td>
+                    <p>Green Screen <br>iMovie</p>
+                </td>
+                <td>
+                    <p>November 2021 (3 Weeks)</p>
+                </td>
+            </tr>
+        </table>
+
+        <p>A recently completed group project, worked in a group of four to produce a vehicle exploring AV ethics. I was involved in all parts of production of the video from Editing to Acting.</p>
+      <p>The Premise of the video is that a man goes out to buy a self driving car but the advertisement he sees is misleading. He thinks it is a Level 4 Autonomous Vehicle, when in fact it is a Level 3 Autonomous Vehicle. The Vehicle then crashes and our video explores who we believe is at fault:</p>
+       
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ivPRAhhtKUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+      <p>References Included at end of the video.</p>
+        
+    </div>
+
+    <script>
+        window.onscroll = function() {mystickyfunction()}; // When the user scrolls execute the function "mystickyfunction"
+
+        var menubar = document.getElementsByClassName("menubar")[0]; //Get the size of the navbar ??!!
+        var sticky = menubar.offsetTop; //Get the offset position ofthe navbar
+
+        function mystickyfunction(){ //Add the sticky class to navbar when you reach the scrolled positon and remove it when you leave the scrolled postion
+            if (window.pageYOffset >= sticky){
+                menubar.classList.add("sticky")
+            }
+            else {
+                menubar.classList.remove("sticky")
+            }
+        
+        }
+    </script>
+    
+</body>
+<footer>
+    <hr>
+    <p style="text-align:center;">&#169; Edward Brodbelt 2022</p>
+    <hr>
+</footer>
+
+</html>
