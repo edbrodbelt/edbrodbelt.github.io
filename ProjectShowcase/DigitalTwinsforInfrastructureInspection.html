@@ -56,18 +56,66 @@
 
     <div class="content">
         <h2>Digital Twins for Infrastructure Inspection</h2>
+    
+        <p>A Group project to develop a robot to map pipes from the inside out. Where my focus has been on 3D printed enclosure, the majority of the hardware and WIFI transmission of the data to AWS(Amazon Web Services.</p>
 
-        <p>A currently ongoing group project in which we are developing a sphere shaped robot that can roll down pipes mapping them and detecting faults. <br>My responsibilities are the majority of the hardware and casing. With a focus on UWB, GPS and 3D printing.<br>Once the project is completed I will update this page with further details.</p>
+        <p>Overview of the System:</p>
+        <img src="Images/DigitalTwinsforInfrastructureInspectionImage2.png" width="100%">
+        <p>The above diagram shows an overview of how the system works. There are two balls in the system, the "Stationary Ball" (or "Fixed Ball") and the "Rolling Ball". The Rolling Ball has six evenly spaced Time of Flight Sensors. This combined with the 9DOF (9 Degrees of Freedom ie Gyroscope). Allows the ball the map the inside of the pipe. This data is then combined with the UWB Distance (ie the Distance between the two balls), through a SLAM (Simultaneous Localisation and Mapping) Algorithm. This produces (x,y,z) points that are on the inside of the pipe. These points are transmitted to the Fixed Ball via bluetooth and then to AWS over Wifi (MQTT, an IOT Protocol). The data is then processed through a number of AWS services and displayed in a live web mapping application.</p>
+
+        <!-- <p>One of my focuses has been on the custom 3D printed casing, which has a number of different features:</p>
+        <table>
+            <tr>
+                <td>img src'</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
         
-        <div id="SymposiumSpeech">
-        <p> Wednesday 16th March 2022, we had the opportunity to present our current progress in our project at a Symposium Event, our talk was recorded and the video is included below:</p>
+    -->
+<img src="Images/DigitalTwinsforInfrastructureInspectionImage1.png" width="80%">
+<p>The above image shows the final two balls, on their wireless charging stands.</p>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Zo713X23a_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-<br><br>
-        <img src="Images/DigitalTwinsforInfrastructureInspectionIcon.png">
-        <p>Image above shows a prototype design of the robot casing</p>
+    <p>The focus of this project was the exploration of wireless communication methods and the idea of live mapping within pipe networks. This prototype we feel is a great proof of concept and shows that wireless pipe mapping could be a real world possibility in the future!</p>
+    
+    <p><b>My  Work within the Project:</b></p>
+    <ul>
+        <li>3D Printed Enclosure - Designed in Fusion 360 from Scratch, with multiple threaded parts and tight fitted tolerances. Then printed on my Personal 3D printer</li>
+        <li> Hardware Choices - Wrote BOM (Bill of Materials) and chose much of the Hardware: ESP32, Batteries, UWB Modules, GPS Modules, LEDS, Switches and Wireless Chargers</li>
+        <li> PCB Design - Designed Custom PCB in Autodesk EAGLE, to combine all components together. Chose to reuses prototype boards to keep final costs down</li>
+        <li> PCB Assembly - Soldered all components onto custom PCB, down to 0603 components by hand. Along with smaller components under a microscope such as micro USB connector pins</li>
+        <li> Arduino Programming - Programmed ESP32 in both balls with  code to retrieve UWB and GPS values. Then also MQTT Wifi Transmission to AWS</li>
+        <li> Group Management - Group representative, hence point of contact for group and also organised meetings, setup meeting minutes rota, organised meetings for group and made sure project was on schedule.</li>
+    </ul>    
+    
+    <h3>Project Presentations:</h3>
+    <p> During the course of this project I had two opportuntiies to present my work. One at a symposium even about 6 weeks before the final deadline and one at the very end of the project:</p>
+    <table style="width:100%">
+        
+            <tr> <div id="SymposiumSpeech">
+                <p><b>Symposium Speech:</b></p>
+                <p> Wednesday 16th March 2022, we had the opportunity to present our current progress in our project at a Symposium Event, our talk was recorded and the video is included below:</p>
+        
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/Zo713X23a_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </tr>
+            <tr> <div id="FinalPresentation">
+                <p><b>Final Presentation:</b></p>
+                <p> Friday 27th June 2022, I had the opportunity to present the final conclusions of the project and my work over the academic year, the screen recording of the talk is included below:</p>
+        
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/2QDNX9lcCow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </tr>
+
+    </table>
    
+<br><br>
+        <!--<img src="Images/DigitalTwinsforInfrastructureInspectionIcon.png">
+        <p>Image above shows a prototype design of the robot casing</p>
+        -->
     </div>
 
     <script>
