@@ -87,8 +87,8 @@
         <p>A Group project to develop a robot to map pipes from the inside out. Where my focus has been on 3D printed enclosure, the majority of the hardware and WIFI transmission of the data to AWS(Amazon Web Services.</p>
 
         <p>Overview of the System:</p>
-        <img src="Images/DigitalTwinsforInfrastructureInspectionImage2.png" width="100%">
-        <p>The above diagram shows an overview of how the system works. There are two balls in the system, the "Stationary Ball" (or "Fixed Ball") and the "Rolling Ball". The Rolling Ball has six evenly spaced Time of Flight Sensors. This combined with the 9DOF (9 Degrees of Freedom ie Gyroscope). Allows the ball the map the inside of the pipe. This data is then combined with the UWB Distance (ie the Distance between the two balls), through a SLAM (Simultaneous Localisation and Mapping) Algorithm. This produces (x,y,z) points that are on the inside of the pipe. These points are transmitted to the Fixed Ball via bluetooth and then to AWS over Wifi (MQTT, an IOT Protocol). The data is then processed through a number of AWS services and displayed in a live web mapping application.</p>
+
+        <p>There are two balls in the system, the "Stationary Ball" (or "Fixed Ball") and the "Rolling Ball". The Rolling Ball has six evenly spaced Time of Flight Sensors. This combined with the 9DOF (9 Degrees of Freedom ie Gyroscope). Allows the ball the map the inside of the pipe. This data is then combined with the UWB Distance (ie the Distance between the two balls), through a SLAM (Simultaneous Localisation and Mapping) Algorithm. This produces (x,y,z) points that are on the inside of the pipe. These points are transmitted to the Fixed Ball via bluetooth and then to AWS over Wifi (MQTT, an IOT Protocol). The data is then processed through a number of AWS services and displayed in a live web mapping application.</p>
 
         <!-- <p>One of my focuses has been on the custom 3D printed casing, which has a number of different features:</p>
         <table>
@@ -103,8 +103,20 @@
         </table>
         
     -->
-<img src="Images/DigitalTwinsforInfrastructureInspectionImage1.png" width="80%">
-<p>The above image shows the final two balls, on their wireless charging stands.</p>
+
+    <table style="text-align: center;">
+        <tr>
+            <td><img src="Images/DigitalTwinsforInfrastructureInspectionImage2.png" width="560"></td>
+            <td><img src="Images/DigitalTwinsforInfrastructureInspectionImage1.png" width="560"></td>
+        </tr>
+        <tr>
+          
+            <td><p>Diagram Overview</p></td>
+            <td><p>The Final Product</p></td>
+        </tr>
+    </table>
+
+
 
     <p>The focus of this project was the exploration of wireless communication methods and the idea of live mapping within pipe networks. This prototype we feel is a great proof of concept and shows that wireless pipe mapping could be a real world possibility in the future!</p>
     
@@ -126,14 +138,14 @@
                 <p><b>Symposium Speech:</b></p>
                 <p> Wednesday 16th March 2022, we had the opportunity to present our current progress in our project at a Symposium Event, our talk was recorded and the video is included below:</p>
         
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/Zo713X23a_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Zo713X23a_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </tr>
             <tr> <div id="FinalPresentation">
                 <p><b>Final Presentation:</b></p>
                 <p> Friday 27th June 2022, I had the opportunity to present the final conclusions of the project and my work over the academic year, the screen recording of the talk is included below:</p>
         
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/2QDNX9lcCow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2QDNX9lcCow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </tr>
 
