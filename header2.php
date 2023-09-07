@@ -24,7 +24,7 @@
             </button> 
             
             <div class="dropdowncontent">
-                <a href="./ProjectShowcase//DigitalTwinsforInfrastructureInspection.html">Digital Twins</a>
+                <a href="./ProjectShowcase/DigitalTwinsforInfrastructureInspection.html">Digital Twins</a>
                 <a href="./ProjectShowcase/EmbeddedSystemsGPS.html">GPS Embedded Systems</a>
                 <a href="./ProjectShowcase/3DPrinting/3DPrintingHome.html">3D Printing</a>
                 <!-- <a href="#">Item 4</a> -->
