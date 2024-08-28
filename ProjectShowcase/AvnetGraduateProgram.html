@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en-UK">
+    <head>
+        <!-- Favicon Implementation -->
+            <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+            <link rel="manifest" href="../favicon/site.webmanifest">
+         <!-- Favicon Implementation-->
+
+        <title> Brodbelt.com </title> <!-- Title - Displayed in tabs bar-->
+        <link rel="stylesheet" type ="text/css" href="../stylesheet.css"> <!-- Linking the style sheet to the index page-->
+    </head>
+    <body>
+    <div class="header">
+        <h1>Brodbelt.com</h1>
+    </div>
+
+    <div class="menubar"> 
+        <a href="../index.html">Home</a>
+
+        <div class="dropdown">
+            <div class="current">
+                <button class="dropdownbutton"> <a class="overrideborder current" href="../Projectshowcasehome.html"> Project Showcase </a>
+                </button> 
+            </div>
+            <div class="dropdowncontent">
+                <a href="./ProjectShowcase/DigitalTwinsforInfrastructureInspection.html">Digital Twins</a>
+                <a href="./ProjectShowcase/EmbeddedSystemsGPS.html">GPS Embedded Systems</a>
+                <a href="./ProjectShowcase/3DPrinting/3DPrintingHome.html">3D Printing</a>
+                <!-- <a href="#">Item 4</a> -->
+                <!-- <a href="#">Item 5</a> -->
+            </div>
+        </div> 
+        <a href="../about.html">About</a>
+        
+
+        <div class="dropdown">
+            <button class="dropdownbutton"> <a class="overrideborder" href="../Blog/bloghome.html">Blog</a>
+            </button> 
+            
+            <div class="dropdowncontent">
+                <a href="./Blog/Interrailling_Top_10_Tips.html">Interrailling Top 10</a>
+                <!-- <a href="#">Item 2</a> -->
+                <!-- <a href="#">Item 3</a> -->
+                <!-- <a href="#">Item 4</a> -->
+                <!-- <a href="#">Item 5</a> -->
+            </div>
+
+        </div> 
+        <!--
+        <a href="#Page5">Page 5</a>
+        <a href="#Page6">Page 6</a> -->
+    </div>
+
+    <div class="content">
+        <h2>Avnet Graduate Program</h2>
+<hr>
+        <table>
+            <tr>
+                <td>
+                <p><b>Name:</b></p>
+                </td>
+                <td>
+                    <p><b>Timeframe</b></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <p>Avnet Graduate Program</p>
+                </td>
+                <td>
+                    <p>October 2023 - December 2024 (15 months)</p>
+                </td>
+            </tr>
+        </table>
+<hr>
+        <p>Provide customer support both in person and online, including specialised assistance with AMD FPGA. Supported trade shows such as Embedded World, Hardware Pioneers and PCIM, providing technical assistance to customers. </p>
+        <p>Gained comprehensive business understanding through exposure to various departments, including Purchasing, Sales, Engineering, Demand Creation, and Supplier Management. Including time spent with Avnet Embedded in Germany. Meeting with different departments in Neufahrn, Stutensee and Eschbach to gain insights into department functions and the internal support network.</p>
+        
+
+
+<br>
+<br>
+
+<table>
+    <tr>
+        <td>
+            <iframe width="560" height="315" src="./Images/AvnetGraduateProgram_EmbeddedWorld.mp4" title="Embedded World" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </td>
+        <td>
+            <img src="./Images/AvnetGraduateProgram_AvnetA.jpeg" alt="Headshot" width="400  ">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Embedded World IOT Connect Demo (Nuremburg, Germany)</p>
+            
+        </td>
+        <td>
+            <p>Avnet EU Head office, Poing, Munich, Germany</p>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>
+        <img src="./Images/AvnetGraduateProgram_PCIM.jpeg" alt="Headshot" width="300    ">
+        </td>
+        <td>
+            <img src="./Images/AvnetGraduateProgram_PodcastEpisode.jpg" alt="Headshot" width="300">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Supporting PCIM Show 2024 (Nuremburg, Germany)</p>
+            
+        </td>
+        <td>
+            <p>Avnet Silica Podcast Episode - featuring Edward</p>
+            <a href="https://we-talk-iot.podbean.eu/e/we-talk-iot-bridging-generations-exploring-the-cool-side-of-hardware-engineering-episode-47-new/">Click Here to listen!</a>
+
+            
+        </td>
+    </tr>
+
+<br>
+    <tr>
+        <td>
+        <img src="./Images/AvnetGraduateProgram_HardwarePioneers.jpeg" alt="Headshot" width="600    ">
+        </td>
+        <td>
+            <img src="./Images/AvnetGraduateProgram_AvnetEmbedded_B2Run_Munich.jpg" alt="Headshot" width="400">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Supporting Hardware Pioneers Show 2024 (London UK)</p>
+            
+        </td>
+        <td>
+            <p>B2Run Fun Run with Avnet Embedded (now called Tria) (Olympic Stadium Munich, Germany) </p>
+            
+
+            
+        </td>
+    </tr>
+
+
+
+</table>
+
+        
+
+        
+        
+        
+
+    </div>
+
+    <script>
+        window.onscroll = function() {mystickyfunction()}; // When the user scrolls execute the function "mystickyfunction"
+
+        var menubar = document.getElementsByClassName("menubar")[0]; //Get the size of the navbar ??!!
+        var sticky = menubar.offsetTop; //Get the offset position ofthe navbar
+
+        function mystickyfunction(){ //Add the sticky class to navbar when you reach the scrolled positon and remove it when you leave the scrolled postion
+            if (window.pageYOffset >= sticky){
+                menubar.classList.add("sticky")
+            }
+            else {
+                menubar.classList.remove("sticky")
+            }
+        
+        }
+    </script>
+    
+</body>
+<footer>
+    <hr>
+    <p style="text-align:center;">&#169; Edward Brodbelt 2024</p>
+    <hr>
+</footer>
+
+</html>
